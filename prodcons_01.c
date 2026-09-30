@@ -63,7 +63,7 @@ int main(int argc, char **argv){
 	consumer_pt = (pthread_t *)malloc(sizeof(pthread_t));
         producer_pt = (pthread_t *)malloc(sizeof(pthread_t));
 	pthread_create(consumer_pt, NULL, consumer, NULL);
-        pthread_create(producer_pt, NULL, consumer, NULL);
+        pthread_create(producer_pt, NULL, producer, NULL);
 	pthread_exit(0);
 }
 
